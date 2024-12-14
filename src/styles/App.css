@@ -1,0 +1,49 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  text-align: start;
+}
+
+.section-form {
+  --input-padding: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  gap: 20px;
+
+  & label {
+    display: grid;
+  }
+  & input,
+  button {
+    padding: var(--input-padding);
+  }
+
+  & .input-title {
+    justify-self: start;
+  }
+  & .form-btn {
+    justify-self: end;
+    align-self: end;
+    grid-column: 1 / 3;
+  }
+
+  & .textarea-label {
+    grid-column: 1 / 3;
+  }
+
+  & textarea {
+    resize: none;
+  }
+
+  & .watch-div {
+    width: 620px;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+}
