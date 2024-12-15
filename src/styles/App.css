@@ -35,6 +35,10 @@
 
   & .textarea-label {
     grid-column: 1 / 3;
+
+    & .watch-div{
+      width: 620px;
+    }
   }
 
   & textarea {
@@ -42,8 +46,8 @@
   }
 
   & .watch-div {
-    width: 620px;
     overflow-wrap: break-word;
     white-space: normal;
+    text-align: start;
   }
 }
